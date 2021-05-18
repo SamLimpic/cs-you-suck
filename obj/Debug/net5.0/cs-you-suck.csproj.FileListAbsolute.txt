@@ -1,0 +1,16 @@
+C:\source\codeworks\cs-you-suck\bin\Debug\net5.0\cs-you-suck.exe
+C:\source\codeworks\cs-you-suck\bin\Debug\net5.0\cs-you-suck.deps.json
+C:\source\codeworks\cs-you-suck\bin\Debug\net5.0\cs-you-suck.runtimeconfig.json
+C:\source\codeworks\cs-you-suck\bin\Debug\net5.0\cs-you-suck.runtimeconfig.dev.json
+C:\source\codeworks\cs-you-suck\bin\Debug\net5.0\cs-you-suck.dll
+C:\source\codeworks\cs-you-suck\bin\Debug\net5.0\ref\cs-you-suck.dll
+C:\source\codeworks\cs-you-suck\bin\Debug\net5.0\cs-you-suck.pdb
+C:\source\codeworks\cs-you-suck\obj\Debug\net5.0\cs-you-suck.csprojAssemblyReference.cache
+C:\source\codeworks\cs-you-suck\obj\Debug\net5.0\cs-you-suck.GeneratedMSBuildEditorConfig.editorconfig
+C:\source\codeworks\cs-you-suck\obj\Debug\net5.0\cs-you-suck.AssemblyInfoInputs.cache
+C:\source\codeworks\cs-you-suck\obj\Debug\net5.0\cs-you-suck.AssemblyInfo.cs
+C:\source\codeworks\cs-you-suck\obj\Debug\net5.0\cs-you-suck.csproj.CoreCompileInputs.cache
+C:\source\codeworks\cs-you-suck\obj\Debug\net5.0\cs-you-suck.dll
+C:\source\codeworks\cs-you-suck\obj\Debug\net5.0\ref\cs-you-suck.dll
+C:\source\codeworks\cs-you-suck\obj\Debug\net5.0\cs-you-suck.pdb
+C:\source\codeworks\cs-you-suck\obj\Debug\net5.0\cs-you-suck.genruntimeconfig.cache
