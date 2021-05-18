@@ -6,431 +6,229 @@ namespace cs_you_suck
 {
     class Program
     {
+
+        static void Message(string msg)
+        {
+            Console.WriteLine("");
+            for (int i = 0; i < msg.Length; i++)
+            {
+                Console.Write(msg[i]);
+                Thread.Sleep(35);
+            }
+        }
+
+        static void Wait(int length, int time)
+        {
+            for (int i = 0; i < length; i++)
+            {
+                Thread.Sleep(time);
+                Console.Write('.');
+            }
+        }
+
+        static void Combo(string msg)
+        {
+            Message(msg);
+            Wait(3, 300);
+        }
         static void Main(string[] args)
         {
+            string msg;
             Console.Clear();
-            Console.WriteLine("It's time for some intense Rock Paper Scissors!");
+            msg = "It's time for some intense Rock Paper Scissors!";
+            Message(msg);
             Thread.Sleep(750);
-            Console.WriteLine("Are you ready to ROCK?! (Y/N)");
+            msg = "Are you ready to ROCK?! (Y/N)";
+            Message(msg);
+            Console.WriteLine("");
             char choice = Console.ReadKey().KeyChar;
             if (char.ToLower(choice) == 'y')
             {
-                Console.WriteLine("\nLet's ROCK!");
+                msg = "Let's ROCK!";
+                Message(msg);
                 Thread.Sleep(750);
             }
             else if (char.ToLower(choice) == 'n')
             {
-                Console.WriteLine("\nOh... well are you ready to PAPER?! (Y/N)");
+                msg = "Oh... well are you ready to PAPER?! (Y/N)";
+                Message(msg);
+                Console.WriteLine("");
                 choice = Console.ReadKey().KeyChar;
                 if (char.ToLower(choice) == 'y')
                 {
-                    Console.Write("\nLet's Paper!");
+                    msg = "Let's Paper!";
+                    Message(msg);
                     Thread.Sleep(750);
                 }
                 else if (char.ToLower(choice) == 'n')
                 {
-                    Console.WriteLine("\nOh... uhm... well... are you ready to... SCISSORS?! (Y/N)");
+                    msg = "Oh... uhm... well... are you ready to... SCISSORS?! (Y/N)";
+                    Message(msg);
+                    Console.WriteLine("");
                     choice = Console.ReadKey().KeyChar;
                     if (char.ToLower(choice) == 'y')
                     {
-                        Console.WriteLine("\nYeah!!  Let's Sc-");
-                        int freq = 150;
-                        for (int i = 0; i < 3; i++)
-                        {
-                            Thread.Sleep(450);
-                            Console.Write('.');
-                            freq += 150;
-                        }
-                        Console.WriteLine("uhh");
-                        for (int i = 0; i < 3; i++)
-                        {
-                            Thread.Sleep(450);
-                            Console.Write('.');
-                            freq += 150;
-                        }
-                        Console.WriteLine("play");
-                        for (int i = 0; i < 3; i++)
-                        {
-                            Thread.Sleep(450);
-                            Console.Write('.');
-                            freq += 150;
-                        }
-                        Console.WriteLine("yeah");
-                        Thread.Sleep(750);
+                        msg = "Yeah!!  Let's Sc-";
+                        Combo(msg);
+                        msg = "uhh";
+                        Combo(msg);
+                        msg = "play";
+                        Combo(msg);
+                        msg = "yeah";
+                        Combo(msg);
+                        msg = "let's play";
+                        Message(msg);
+                        Thread.Sleep(1500);
                     }
                     else if (char.ToLower(choice) == 'n')
                     {
+                        msg = "Uhh";
+                        Combo(msg);
+                        Thread.Sleep(750);
+                        msg = "well";
+                        Combo(msg);
+                        msg = "that's";
+                        Combo(msg);
+                        Thread.Sleep(750);
+                        msg = "that's totally fine";
+                        Combo(msg);
+                        Thread.Sleep(1500);
+                        msg = "I mean";
+                        Combo(msg);
+                        Thread.Sleep(750);
+                        msg = "Are you sure...? (Y/N)";
+                        Message(msg);
                         Console.WriteLine("");
-                        int freq = 150;
-                        for (int i = 0; i < 3; i++)
-                        {
-                            Thread.Sleep(450);
-                            Console.Write('.');
-                            freq += 150;
-                        }
-                        Console.WriteLine("Oh");
-                        for (int i = 0; i < 3; i++)
-                        {
-                            Thread.Sleep(450);
-                            Console.Write('.');
-                            freq += 150;
-                        }
-                        Console.WriteLine("well");
-                        for (int i = 0; i < 3; i++)
-                        {
-                            Thread.Sleep(450);
-                            Console.Write('.');
-                            freq += 150;
-                        }
-                        Console.WriteLine("that's");
-                        for (int i = 0; i < 3; i++)
-                        {
-                            Thread.Sleep(450);
-                            Console.Write('.');
-                            freq += 150;
-                        }
-                        Console.WriteLine("");
-                        for (int i = 0; i < 3; i++)
-                        {
-                            Thread.Sleep(450);
-                            Console.Write('.');
-                            freq += 150;
-                        }
-                        Console.WriteLine("that's totally fine");
-                        for (int i = 0; i < 3; i++)
-                        {
-                            Thread.Sleep(450);
-                            Console.Write('.');
-                            freq += 150;
-                        }
-                        Console.WriteLine("");
-                        for (int i = 0; i < 3; i++)
-                        {
-                            Thread.Sleep(450);
-                            Console.Write('.');
-                            freq += 150;
-                        }
-                        Console.WriteLine("");
-                        for (int i = 0; i < 3; i++)
-                        {
-                            Thread.Sleep(450);
-                            Console.Write('.');
-                            freq += 150;
-                        }
-                        Console.WriteLine("I mean");
-                        for (int i = 0; i < 3; i++)
-                        {
-                            Thread.Sleep(450);
-                            Console.Write('.');
-                            freq += 150;
-                        }
-                        Console.WriteLine("");
-                        for (int i = 0; i < 3; i++)
-                        {
-                            Thread.Sleep(450);
-                            Console.Write('.');
-                            freq += 150;
-                        }
-                        Console.WriteLine("Are you sure...? (Y/N)");
                         choice = Console.ReadKey().KeyChar;
                         if (char.ToLower(choice) == 'y')
                         {
-                            Console.WriteLine("\nTOO BAD!!  LET'S GOOO!!");
+                            msg = "TOO BAD!!  LET'S GOOO!!";
+                            Message(msg);
                             Thread.Sleep(750);
                         }
                         else if (char.ToLower(choice) == 'n')
                         {
-                            Console.WriteLine("\nGood enough for me!  Let's go!");
+                            msg = "Good enough for me!  Let's go!";
+                            Message(msg);
                             Thread.Sleep(750);
                         }
                         else
                         {
-                            Console.WriteLine("\nI'll take that as some sort of vague acquiescence so LET'S GO!");
+                            msg = "I'll take that as some sort of vague acquiescence so LET'S GO!";
+                            Message(msg);
                             Thread.Sleep(750);
                         }
                     }
                     else
                     {
-                        Console.WriteLine("\nI'll take that as some sort of vague acquiescence so LET'S GO!");
+                        msg = "I'll take that as some sort of vague acquiescence so LET'S GO!";
+                        Message(msg);
                         Thread.Sleep(750);
                     }
                 }
                 else
                 {
-                    Console.WriteLine("\nI'll take that as some sort of vague acquiescence so LET'S GO!");
+                    msg = "I'll take that as some sort of vague acquiescence so LET'S GO!";
+                    Message(msg);
                     Thread.Sleep(750);
                 }
             }
             else
             {
-                Console.WriteLine("\nI'll take that as some sort of vague acquiescence so LET'S GO!");
+                msg = "I'll take that as some sort of vague acquiescence so LET'S GO!";
+                Message(msg);
                 Thread.Sleep(750);
             }
             bool running = true;
             while (running)
             {
-                Console.WriteLine("");
-                Console.WriteLine("Our highly-advanced algorithm is predicting your every move");
+                Console.Clear();
+                msg = "Our highly-advanced algorithm is predicting your every move";
+                Combo(msg);
                 Thread.Sleep(750);
-                Console.WriteLine("Bring it on!");
-                int freq = 150;
-                for (int i = 0; i < 3; i++)
-                {
-                    Thread.Sleep(450);
-                    Console.Write('.');
-                    freq += 150;
-                }
+                msg = "Bring it on!";
+                Message(msg);
                 Game game = new Game();
                 bool playing = true;
                 while (playing)
                 {
-                    Console.WriteLine("\nMake your move... Rock, Paper, or Scissors?");
-
+                    msg = "Make your move... Rock, Paper, or Scissors?";
+                    Message(msg);
+                    Console.WriteLine("");
                     string input = Console.ReadLine();
                     playing = game.Input(input);
                 }
-                Console.Clear();
-                Console.WriteLine("");
+                Thread.Sleep(1500);
+                msg = "Unless";
+                Combo(msg);
                 Thread.Sleep(750);
-                for (int i = 0; i < 3; i++)
-                {
-                    Thread.Sleep(450);
-                    Console.Write('.');
-                    freq += 150;
-                }
-                Console.WriteLine("Unless");
-                for (int i = 0; i < 3; i++)
-                {
-                    Thread.Sleep(450);
-                    Console.Write('.');
-                    freq += 150;
-                }
-                Console.WriteLine("");
-                for (int i = 0; i < 3; i++)
-                {
-                    Thread.Sleep(450);
-                    Console.Write('.');
-                    freq += 150;
-                }
-                Console.WriteLine("You didn't");
-                for (int i = 0; i < 3; i++)
-                {
-                    Thread.Sleep(450);
-                    Console.Write('.');
-                    freq += 150;
-                }
-                Console.WriteLine("");
-                for (int i = 0; i < 3; i++)
-                {
-                    Thread.Sleep(450);
-                    Console.Write('.');
-                    freq += 150;
-                }
-                Console.WriteLine("You didn't mean that");
-                for (int i = 0; i < 3; i++)
-                {
-                    Thread.Sleep(450);
-                    Console.Write('.');
-                    freq += 150;
-                }
-                Console.WriteLine("");
-                for (int i = 0; i < 3; i++)
-                {
-                    Thread.Sleep(450);
-                    Console.Write('.');
-                    freq += 150;
-                }
-                Console.WriteLine("");
-                for (int i = 0; i < 3; i++)
-                {
-                    Thread.Sleep(450);
-                    Console.Write('.');
-                    freq += 150;
-                }
-                Console.Clear();
+                msg = "You didn't";
+                Combo(msg);
                 Thread.Sleep(750);
-                Console.WriteLine("Did you...? (Y?N)");
+                msg = "You didn't really mean that";
+                Combo(msg);
+                Thread.Sleep(1500);
+                msg = "Did you...? (Y?N)";
+                Message(msg);
+                Console.WriteLine("");
                 choice = Console.ReadKey().KeyChar;
                 if (choice == 'y')
                 {
-                    Console.WriteLine("");
-                    for (int i = 0; i < 3; i++)
-                    {
-                        Thread.Sleep(450);
-                        Console.Write('.');
-                        freq += 150;
-                    }
-                    Console.WriteLine("Oh");
-                    for (int i = 0; i < 3; i++)
-                    {
-                        Thread.Sleep(450);
-                        Console.Write('.');
-                        freq += 150;
-                    }
-                    Console.WriteLine("That's ok");
-                    for (int i = 0; i < 3; i++)
-                    {
-                        Thread.Sleep(450);
-                        Console.Write('.');
-                        freq += 150;
-                    }
-                    Console.WriteLine("");
-                    for (int i = 0; i < 3; i++)
-                    {
-                        Thread.Sleep(450);
-                        Console.Write('.');
-                        freq += 150;
-                    }
+                    Thread.Sleep(1500);
                     Console.Clear();
+                    msg = "Oh";
+                    Combo(msg);
                     Thread.Sleep(750);
-                    Console.WriteLine("");
-                    for (int i = 0; i < 3; i++)
-                    {
-                        Thread.Sleep(450);
-                        Console.Write('.');
-                        freq += 150;
-                    }
-                    Console.WriteLine("I");
-                    for (int i = 0; i < 3; i++)
-                    {
-                        Thread.Sleep(450);
-                        Console.Write('.');
-                        freq += 150;
-                    }
-                    Console.WriteLine("");
-                    for (int i = 0; i < 3; i++)
-                    {
-                        Thread.Sleep(450);
-                        Console.Write('.');
-                        freq += 150;
-                    }
-                    Console.WriteLine("I get it");
-                    for (int i = 0; i < 3; i++)
-                    {
-                        Thread.Sleep(450);
-                        Console.Write('.');
-                        freq += 150;
-                    }
-                    Console.Clear();
+                    msg = "That's";
+                    Combo(msg);
                     Thread.Sleep(750);
-                    Console.WriteLine("");
-                    for (int i = 0; i < 3; i++)
-                    {
-                        Thread.Sleep(450);
-                        Console.Write('.');
-                        freq += 150;
-                    }
-                    Console.WriteLine("It's");
-                    for (int i = 0; i < 3; i++)
-                    {
-                        Thread.Sleep(450);
-                        Console.Write('.');
-                        freq += 150;
-                    }
-                    Console.WriteLine("");
-                    for (int i = 0; i < 3; i++)
-                    {
-                        Thread.Sleep(450);
-                        Console.Write('.');
-                        freq += 150;
-                    }
-                    Console.WriteLine("It's fine");
-                    for (int i = 0; i < 3; i++)
-                    {
-                        Thread.Sleep(450);
-                        Console.Write('.');
-                        freq += 150;
-                    }
-                    Console.WriteLine("");
-                    for (int i = 0; i < 3; i++)
-                    {
-                        Thread.Sleep(450);
-                        Console.Write('.');
-                        freq += 150;
-                    }
-                    Console.WriteLine("It's totally fine");
-                    for (int i = 0; i < 3; i++)
-                    {
-                        Thread.Sleep(450);
-                        Console.Write('.');
-                        freq += 150;
-                    }
-                    Console.WriteLine("");
-                    for (int i = 0; i < 3; i++)
-                    {
-                        Thread.Sleep(450);
-                        Console.Write('.');
-                        freq += 150;
-                    }
-                    Console.WriteLine("");
-                    for (int i = 0; i < 3; i++)
-                    {
-                        Thread.Sleep(450);
-                        Console.Write('.');
-                        freq += 150;
-                    }
+                    msg = "That's ok";
+                    Combo(msg);
+                    Thread.Sleep(1500);
+                    msg = "I";
+                    Combo(msg);
+                    Thread.Sleep(750);
+                    msg = "I get it";
+                    Combo(msg);
+                    Thread.Sleep(1500);
+                    msg = "It's fine";
+                    Combo(msg);
+                    Thread.Sleep(1500);
+                    msg = "It's totally fine";
+                    Combo(msg);
+                    Thread.Sleep(1500);
                     Console.Clear();
                     Thread.Sleep(1500);
-                    Console.WriteLine("It's fine");
-                    Thread.Sleep(1500);
+                    msg = "It's fine";
+                    Message(msg);
                     running = false;
                 }
                 else if (choice == 'n')
                 {
-                    Console.WriteLine("\nHA!  I knew you couldn't accept the bitter taste of defeat!");
+                    msg = "HA!  I knew you couldn't accept the bitter taste of defeat!";
+                    Message(msg);
                     Thread.Sleep(750);
-                    Console.WriteLine("\nPrepare to be crushed into the dirt, peasant!");
-                    Thread.Sleep(750);
+                    msg = "Prepare to be crushed into the dirt, peasant!";
+                    Message(msg);
+                    Thread.Sleep(1500);
                 }
                 else
                 {
-                    Console.WriteLine("");
-                    for (int i = 0; i < 3; i++)
-                    {
-                        Thread.Sleep(450);
-                        Console.Write('.');
-                        freq += 150;
-                    }
-                    Console.WriteLine("You");
-                    for (int i = 0; i < 3; i++)
-                    {
-                        Thread.Sleep(450);
-                        Console.Write('.');
-                        freq += 150;
-                    }
-                    Console.WriteLine("What?");
-                    for (int i = 0; i < 3; i++)
-                    {
-                        Thread.Sleep(450);
-                        Console.Write('.');
-                        freq += 150;
-                    }
-                    Console.WriteLine("I");
-                    for (int i = 0; i < 3; i++)
-                    {
-                        Thread.Sleep(450);
-                        Console.Write('.');
-                        freq += 150;
-                    }
-                    Console.WriteLine("");
-                    for (int i = 0; i < 3; i++)
-                    {
-                        Thread.Sleep(450);
-                        Console.Write('.');
-                        freq += 150;
-                    }
-                    Console.WriteLine("");
-                    for (int i = 0; i < 3; i++)
-                    {
-                        Thread.Sleep(450);
-                        Console.Write('.');
-                        freq += 150;
-                    }
+                    msg = "You";
+                    Combo(msg);
                     Thread.Sleep(750);
-                    Console.WriteLine("I will not have my emotions toyed with like this!");
+                    msg = "What?";
+                    Combo(msg);
                     Thread.Sleep(750);
-                    Console.WriteLine("\nYou cannot escape your fate so easily, pesky Human!");
+                    msg = "I";
+                    Combo(msg);
+                    Thread.Sleep(1500);
+                    msg = "I will not have my emotions toyed with like this!";
+                    Message(msg);
                     Thread.Sleep(750);
+                    msg = "You cannot escape your fate so easily, pesky Human!";
+                    Message(msg);
+                    Thread.Sleep(1500);
                 }
             }
         }
